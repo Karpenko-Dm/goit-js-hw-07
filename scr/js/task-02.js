@@ -6,11 +6,7 @@
     'Зелень',
     'Приправы',
 ];
-const list = document.querySelector('body');
-const listEl = document.createElement('ul');
-listEl.classList.add('list-el');
-listEl.textContent = 'List';
-console.log(listEl);
+const listEl = document.querySelector('#ingredients');
 
 const elements = ingredients.map(elemItem => {
     const listItems = document.createElement('li');
@@ -22,7 +18,7 @@ const elements = ingredients.map(elemItem => {
 
 console.log(elements);
 listEl.append(...elements);
-list.append(listEl);
+
 
 
 
